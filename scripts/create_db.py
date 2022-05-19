@@ -23,13 +23,13 @@ def main():
         id = integer not null primary key, 
         email = varchar(255),
         token = varchar(255),
-        user_id = integer, reference users,
+        user_id = integer references users,
         created_at = varchar(255)
         );""")
 
     session.execute(""" create table stream (
     id = integer not null primary key,
-    user_id = integer, reference users,
+    user_id = integer references users,
     title = varchar(255),
     topic = varchar(255),
     status = varchar(255),

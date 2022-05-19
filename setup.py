@@ -16,5 +16,5 @@ setup(name='prototype_analytical_core',
           'SQLAlchemy',
           'pytest',
           'requests'],
-      scripts=['app/main.py', 'script/create_db.py']
+      scripts=['scripts/create_db.py', 'app/main.py']
       )
